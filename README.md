@@ -15,8 +15,5 @@ The Algorithmic Trading Simulator is a project designed to test and evaluate alg
 - **Frameworks**: Core, Async, Dune
 - **Version Control**: Git, GitHub
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Note
+The project is currently in the development phase, and there are some deployment issues that are being worked on.
