@@ -30,7 +30,7 @@ type transaction = {
 }
 
 (* Trade history storage *)
-let trade_history = ref []  
+let trade_history = ref[]  
 
 (* Function to record a trade *)
 let record_trade stock action price =
