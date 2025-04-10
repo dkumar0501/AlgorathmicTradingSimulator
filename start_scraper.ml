@@ -1,22 +1,22 @@
-open Core.Std;;
-open Async.Std;;
+open Core.Std;
+open Async.Std;
 
-let fields = ["Ask";"Open";"PreviousClose";"ChangeinPercent";"Bid";"EBITDA"];;
+let fields = ["Ask";"Open";"PreviousClose";"ChangeinPercent";"Bid";"EBITDA"];
 
 let gd = 
 	fun _ -> Scraper.BasicScraper.get_data fields ["GOOG";"MSFT";"STT";"BAC"]
-				>>| Scraper.BasicScraper.print_data;;
+				>>| Scraper.BasicScraper.print_data;
 
-Scraper.print_vals ("Ticker"::fields) (fun field -> print_string ((Scraper.shorten field 7) ^ "\t|\t"));;
+Scraper.print_vals ("Ticker"::fields) (fun field -> print_string ((Scraper.shorten field 7) ^ "\t|\t"));
 
-print_string "\n";;
+print_string "\n";
 
 let rec loop = 
 	fun _ -> 
 		after (sec 3.)
 		>>= gd
-		>>= loop;;
+		>>= loop;
 
-loop ();;
+loop ();
 
 let () = never_returns (Scheduler.go ())
