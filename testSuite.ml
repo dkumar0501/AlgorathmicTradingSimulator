@@ -11,7 +11,6 @@ let numExcept = ref 0
 let test_suite = ref []
 
 let get_option = function None -> raise EmptyRef 
-												| Some v -> v
 
 let empty_ref = fun _ -> ref None
 
