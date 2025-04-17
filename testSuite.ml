@@ -19,6 +19,7 @@ let add_test_case_to_suite tc = test_suite := tc::!test_suite
 let print_results = 
 	fun _ -> Printf.printf "\027[32m%d tests passed/%d tests failed/%d exceptions in %fs\n" 
 												 !numPassed !numFailed !numExcept (Time.to_float (Time.now ()) -. !start_time)
+		| Some v -> v
 
 let handle_test_result test_id printer act exp t = 
 	try print_string ((if t 
