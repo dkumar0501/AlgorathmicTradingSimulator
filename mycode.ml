@@ -1,4 +1,4 @@
-(* Algorithmic Trading Simulator in OCaml *)
+(* Algorithmic Trading Simulator  *)
 
 open Printf
 
