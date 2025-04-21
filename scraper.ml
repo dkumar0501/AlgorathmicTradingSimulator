@@ -1,7 +1,7 @@
 open Core.Std;;
 open Async.Std;;
 
-let shorten s n = String.sub s 0 (min n (String.length s))
+let shorten s n = String.sub s 0 (min n (String.length ))
 let print_vals vals f = List.iter vals ~f:f
 
 let date_range_to_annual_periods start_date end_date =
