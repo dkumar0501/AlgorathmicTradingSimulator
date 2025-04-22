@@ -42,6 +42,6 @@ let simulate_trading stocks strategy initial_balance =
   List.iter (fun s ->
     let current_holding = Hashtbl.find_opt portfolio.holdings s.symbol |> Option.value ~default:0 in
     
-    (* Buy Condition *)
+    (* Buy Condition type *)
     if strategy.buy_condition s && portfolio.balance >= s.price then (
       Hashtbl.replace
