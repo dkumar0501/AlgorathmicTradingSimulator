@@ -1,4 +1,4 @@
-(* Algorithmic Trading Simulator  *)
+(* Algorithmic Trading Simulator machine  *)
 
 open Printf
 
