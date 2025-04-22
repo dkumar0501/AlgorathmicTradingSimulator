@@ -1,7 +1,7 @@
 (* Algorithmic Trading Simulator machine  *)
 
 open Printf
-
+ 
 (* Define a type for stock market data  *)
 type stock = {
   symbol: string;
