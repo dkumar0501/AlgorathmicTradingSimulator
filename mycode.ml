@@ -9,7 +9,7 @@ type stock = {
   volume: int;
 }
 
-(* Define a type for trading strategy  *)
+(* Define a type for trading strategy *)
 type strategy = {
   name: string;
   buy_condition: stock -> bool;
