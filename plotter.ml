@@ -8,7 +8,7 @@ let get_val l comp =
 
 let get_min l = get_val l (<)
 let get_max l = get_val l (>)
-
+  
 class plotter = 
 		(*let _ = (Graphics.open_graph ""; Graphics.resize_window 800 500) in*)
 		object(self)
