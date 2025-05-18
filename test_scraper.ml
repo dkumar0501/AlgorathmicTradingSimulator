@@ -1,5 +1,5 @@
 open OUnit;;
-open Core.Std;;
+open Core.Std;; 
 
 let test_scraper = "BasicScraper" >:::
 [
