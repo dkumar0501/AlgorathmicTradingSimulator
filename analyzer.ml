@@ -1,4 +1,4 @@
-open Core
+open Core 
 open Async
 
 type position = [`Long | `Stay | `Short]
