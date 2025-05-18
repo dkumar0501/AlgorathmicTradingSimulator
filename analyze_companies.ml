@@ -1,7 +1,7 @@
 open Core
 open Async
 open Analyzer
-
+ 
 module Mov = MovingAverageAnalyzer(Scraper.BasicScraper)
 
 let print_result ~year ~ticker ~profit ~investment =
