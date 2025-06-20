@@ -9,7 +9,7 @@ let numPassed = ref 0
 let numFailed = ref 0
 let numExcept = ref 0
 let test_suite = ref []
-
+ 
 let get_option = function None -> raise EmptyRef 
 
 let empty_ref = fun _ -> ref None
