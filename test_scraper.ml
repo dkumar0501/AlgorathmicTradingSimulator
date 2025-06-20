@@ -9,7 +9,7 @@ let test_scraper = "BasicScraper" >:::
 			let s = Int.to_string (Random.bits ()) in
 			assert_equal (String.length (Scraper.shorten s d)) (min (String.length s) d)
 		done;
-		assert_equal "short" (Scraper.shorten "shortless" 5)
+		assert_equal "short" (Scraper.shorten "shortless" 5) 
 	);
 	
 	"date_range_convert" >:: (fun () ->
