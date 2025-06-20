@@ -4,7 +4,7 @@ open Async.Std;;
 let shorten s n = String.sub s 0 (min n (String.length ))
 let print_vals vals f = List.iter vals ~f:f
 
-let date_range_to_annual_periods start_date end_date =
+let date_range_to_annual_periods start_date end_date = 
 	let rec aux s e acc =
 		if (Date.diff e s) > 400 
 		then let prev = Date.add_months e (-12)
