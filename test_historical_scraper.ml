@@ -17,7 +17,7 @@ let command =
       +> flag "-s" (optional_with_default "2003-01-01" string) ~doc:" start of date range"
 			+> flag "-e" (optional_with_default "2003-12-31" string) ~doc:" end of date range"
     )
-    (fun fs ticker start_date end_date () -> 
+    (fun fs ticker start_date end_date () ->  
 			let fields = (match fs with [] -> fields_default | xs -> xs) in
 			Scraper.print_vals ("Ticker"::"Date"::fields) (fun field -> print_string ((Scraper.shorten field 7) ^ "\t\t|\t"));
 			print_string "\n";
