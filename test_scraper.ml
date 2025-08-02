@@ -2,7 +2,7 @@ open OUnit;;
 open Core.Std;; 
 
 let test_scraper = "BasicScraper" >:::   
-[
+[  
 	"shorten" >:: (fun () ->  
 		for i = 1 to 100 do
 			let d = Random.int i in 
