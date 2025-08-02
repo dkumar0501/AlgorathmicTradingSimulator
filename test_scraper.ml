@@ -3,7 +3,7 @@ open Core.Std;;
 
 let test_scraper = "BasicScraper" >:::  
 [
-	"shorten" >:: (fun () -> 
+	"shorten" >:: (fun () ->  
 		for i = 1 to 100 do
 			let d = Random.int i in 
 			let s = Int.to_string (Random.bits ()) in
