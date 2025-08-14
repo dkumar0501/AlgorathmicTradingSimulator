@@ -3,7 +3,7 @@ open Async.Std;;
 
 exception EmptyRef;;  
 
-let start_time = ref 0. 
+let start_time = ref 0.  
 let first = ref false
 let numPassed = ref 0
 let numFailed = ref 0
