@@ -13,7 +13,7 @@ val act : position -> position -> action
 
 (** Get the last non-None action from an action list *)
 val get_last_action : [< `Buy | `None | `Sell ] list -> [> `Buy | `None | `Sell ]
-
+ 
 (** Convert a portfolio to a printable string *)
 val portfolio_to_string : portfolio -> string
 
