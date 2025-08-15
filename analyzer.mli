@@ -19,7 +19,7 @@ val portfolio_to_string : portfolio -> string
 
 (** An empty portfolio *)
 val empty_portfolio : portfolio
-
+ 
 (** Add a stock and its proportion to the portfolio *)
 val add_to_portfolio : portfolio -> string -> float -> portfolio 
 
