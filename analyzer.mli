@@ -21,7 +21,7 @@ val portfolio_to_string : portfolio -> string
 val empty_portfolio : portfolio
 
 (** Add a stock and its proportion to the portfolio *)
-val add_to_portfolio : portfolio -> string -> float -> portfolio
+val add_to_portfolio : portfolio -> string -> float -> portfolio 
 
 (** Compute a simple moving average over a float list with window size *)
 val moving_average : float list -> int -> float list
