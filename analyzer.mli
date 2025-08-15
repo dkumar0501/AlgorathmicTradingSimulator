@@ -10,7 +10,7 @@ val pos_to_act : position -> action
  
 (** Determine trading action based on position change *)
 val act : position -> position -> action  
-
+ 
 (** Get the last non-None action from an action list *)
 val get_last_action : [< `Buy | `None | `Sell ] list -> [> `Buy | `None | `Sell ]
  
