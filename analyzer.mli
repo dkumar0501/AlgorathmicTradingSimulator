@@ -5,7 +5,7 @@ type portfolio = (string * float) list
 (** Compare two values to determine long or short signal *)   
 val mov_avg_comp : float -> float -> [> `Long | `Short ]    
   
-(** Convert a position to a corresponding action *)
+(** Convert a position to a corresponding action *) 
 val pos_to_act : position -> action 
 
 (** Determine trading action based on position change *)
