@@ -1,7 +1,7 @@
 type position = [ `Long | `Stay | `Short ]
 type action = [ `Buy | `None | `Sell ]
 type portfolio = (string * float) list 
-   
+    
 (** Compare two values to determine long or short signal *)     
 val mov_avg_comp : float -> float -> [> `Long | `Short ]     
    
