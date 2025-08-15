@@ -7,7 +7,7 @@ val mov_avg_comp : float -> float -> [> `Long | `Short ]
   
 (** Convert a position to a corresponding action *) 
 val pos_to_act : position -> action 
-
+ 
 (** Determine trading action based on position change *)
 val act : position -> position -> action  
 
