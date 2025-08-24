@@ -45,3 +45,5 @@ let () =
     analyze_all tickers ~start_date:"2013-01-01" ~end_date:"2014-07-01"
   );
   never_returns (Scheduler.go ())
+
+ 
