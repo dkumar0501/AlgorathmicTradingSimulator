@@ -3,7 +3,7 @@ open Core.Std;;
 let extra  = 1.05;;
  
 let get_val l comp =   
-	List.fold_left l ~init:(List.hd_exn l) 
+	List.fold_left l ~init:(List.hd_exn l)  
 		~f:(fun a x -> if comp x a then x else a)
 
 let get_min l = get_val l (<) 
