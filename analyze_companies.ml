@@ -1,6 +1,6 @@
 open Core
 open Async
-open Analyzer 
+open Analyzer  
   
 module Mov = MovingAverageAnalyzer(Scraper.BasicScraper)
  
