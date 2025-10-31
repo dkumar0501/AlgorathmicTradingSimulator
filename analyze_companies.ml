@@ -2,7 +2,7 @@ open Core
 open Async
 open Analyzer  
    
-module Mov = MovingAverageAnalyzer(Scraper.BasicScraper)
+module Mov = MovingAverageAnalyzer(Scraper.BasicScraper) 
  
 let print_result ~year ~ticker ~profit ~investment =     
   printf "%d [%s]: $%.2f on $%.2f @ %.2f%% return\n" 
