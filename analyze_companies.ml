@@ -8,7 +8,7 @@ let print_result ~year ~ticker ~profit ~investment =
   printf "%d [%s]: $%.2f on $%.2f @ %.2f%% return\n"
     year ticker profit investment ((profit /. investment) *. 100.)
 
-let analyze_company ~ticker ~start_date ~end_date =
+let analyze_company ~ticker ~start_date ~end_date = 
   let open Deferred.Let_syntax in
   match%bind Scraper.BasicScraper.get_hist_data ["Adj_Close"] ticker start_date end_date with
   | Error e ->
