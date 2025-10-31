@@ -9,7 +9,7 @@ let print_result ~year ~ticker ~profit ~investment =
     year ticker profit investment ((profit /. investment) *. 100.)
 
 let analyze_company ~ticker ~start_date ~end_date = 
-  let open Deferred.Let_syntax in
+  let open Deferred.Let_syntax in 
   match%bind Scraper.BasicScraper.get_hist_data ["Adj_Close"] ticker start_date end_date with
   | Error e ->
       eprintf "Error retrieving data for %s: %s\n" ticker (Error.to_string_hum e);
