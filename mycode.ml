@@ -6,7 +6,7 @@ open Printf
 type stock = {
   symbol: string;
   price: float;
-  volume: int;
+  volume: int; 
 }  
  
 (* Define a type for trading strategy *)
