@@ -8,7 +8,7 @@ type stock = {
   price: float;
   volume: int;
 }  
-
+ 
 (* Define a type for trading strategy *)
 type strategy = {
   name: string;
