@@ -12,7 +12,7 @@ type stock = {
 (* Define a type for trading strategy *) 
 type strategy = {
   name: string;
-  buy_condition: stock -> bool;  
+  buy_condition: stock -> bool;   
   sell_condition: stock -> bool;
 }
 
