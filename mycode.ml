@@ -5,7 +5,7 @@ open Printf
 (* Define a type for stock market data  *)
 type stock = {  
   symbol: string;
-  price: float;  
+  price: float;   
   volume: int;  
 }   
    
