@@ -3,7 +3,7 @@ open Async
 
 type position = [`Long | `Stay | `Short]  
 type action = [`Buy | `None | `Sell]
-  
+   
 type portfolio = (string * float) list  
   
 let period = 200   
