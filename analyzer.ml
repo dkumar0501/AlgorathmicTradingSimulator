@@ -15,7 +15,7 @@ let portfolio_to_string p =
 let mov_avg_comp a b = if a < b then `Short else `Long
 
 let pos_to_act = function
-  | `Long -> `Buy 
+  | `Long -> `Buy  
   | `Stay -> `None
   | `Short -> `Sell
 
