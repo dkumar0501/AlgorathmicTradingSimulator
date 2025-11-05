@@ -18,7 +18,7 @@ let pos_to_act = function
   | `Long -> `Buy  
   | `Stay -> `None
   | `Short -> `Sell
-
+ 
 let act a b = match (a, b) with
   | (`Long, `Short) -> `Sell
   | (`Short, `Long) -> `Buy
