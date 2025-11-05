@@ -65,7 +65,7 @@ let eval_strategy ?(conservative=false) closes strategy =
 
 let empty_portfolio = []
 let add_to_portfolio p s f = (s, f) :: p
-
+ 
 let moving_average l n =
   let arr = Array.of_list l in
   let len = Array.length arr in
