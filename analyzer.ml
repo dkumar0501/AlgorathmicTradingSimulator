@@ -37,7 +37,7 @@ let eval_strategy ?(conservative=false) closes strategy =
   let rec aux cs strat acc =
     match cs, strat with
     | c :: c', p :: s ->
-        let new_acc =
+        let new_acc = 
           match p with
           | `Buy ->
               if debug then printf "Bought @ $%.2f\n" c;
