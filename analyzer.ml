@@ -6,7 +6,7 @@ type action = [`Buy | `None | `Sell]
  
 type portfolio = (string * float) list
   
-let period = 200
+let period = 200 
 let debug = false
 
 let portfolio_to_string p =
