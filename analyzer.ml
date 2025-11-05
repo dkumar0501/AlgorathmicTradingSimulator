@@ -8,7 +8,7 @@ type portfolio = (string * float) list
   
 let period = 200 
 let debug = false
-
+ 
 let portfolio_to_string p =
   List.fold p ~init:"" ~f:(fun acc (s, f) -> s ^ ": " ^ Float.to_string f ^ ", " ^ acc)
 
