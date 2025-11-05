@@ -27,7 +27,7 @@ let act a b = match (a, b) with
 let get_last_action l =
   let rec aux last = function
     | [] -> last 
-    | `None :: t -> aux last t
+    | `None :: t -> aux last t 
     | (`Buy | `Sell) as a :: t -> aux a t
   in
   aux `None l
