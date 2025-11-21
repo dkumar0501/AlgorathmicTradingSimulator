@@ -2,7 +2,7 @@
 
 ## Overview
 The Algorithmic Trading Simulator is a project designed to test and evaluate algorithmic trading strategies using simulated real time price data. This tool provides insights into strategy performance through comprehensive backtesting and reporting.
-
+ 
 ## Features
 - **Trading Simulator**: Test algorithmic strategies with realistic price simulations.
 - **Order Execution**: Implemented modules for executing trades based on simulated conditions.
